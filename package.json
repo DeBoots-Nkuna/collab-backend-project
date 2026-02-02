@@ -1,0 +1,28 @@
+{
+  "name": "backend-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^7.3.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mysql2": "^3.16.2",
+    "pg": "^8.18.0",
+    "prisma": "^6.19.2",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}

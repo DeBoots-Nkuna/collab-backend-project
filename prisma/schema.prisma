@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Sermon {
+  id         Int      @id @default(autoincrement())
+  title      String
+  preacher   String
+  date       DateTime
+  duration   Int?
+  tags       String[]
+  audioData  Bytes
+  transcript String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
